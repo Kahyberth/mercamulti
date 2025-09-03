@@ -3,7 +3,9 @@ const { join } = require('path');
 
 module.exports = {
   output: {
-    path: join(__dirname, 'dist'),
+    // --- LA CORRECCIÓN ESTÁ AQUÍ ---
+    path: join(__dirname, '../../dist/apps/api-gateway'),
+    // -----------------------------
     ...(process.env.NODE_ENV !== 'production' && {
       devtoolModuleFilenameTemplate: '[absolute-resource-path]',
     }),
