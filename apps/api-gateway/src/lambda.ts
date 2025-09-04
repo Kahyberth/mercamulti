@@ -1,3 +1,5 @@
+//Lambda.ts
+
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app/app.module';
 import { configure as serverlessExpress } from '@vendia/serverless-express';
